@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Menu_Type": {
+      "type": "enumeration",
+      "enum": [
+        "Main",
+        "Hidden",
+        "Top"
+      ],
+      "default": "Main",
+      "required": true
+    },
+    "Menu_Name": {
+      "type": "string"
+    },
+    "Menu_Link_Type": {
+      "type": "enumeration",
+      "enum": [
+        "Internal",
+        "External",
+        "Other"
+      ],
+      "default": "Internal",
+      "required": true
+    },
+    "Menu_Link": {
+      "type": "string",
+      "required": true,
+      "default": "#"
+    },
+    "Sort": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

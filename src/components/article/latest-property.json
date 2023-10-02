@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_article_latest_properties",
+  "info": {
+    "displayName": "Latest_Property",
+    "icon": "emotionHappy"
+  },
+  "options": {},
+  "attributes": {
+    "Enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "Sort_Field": {
+      "type": "enumeration",
+      "enum": [
+        "Created",
+        "Updated"
+      ]
+    }
+  }
+}

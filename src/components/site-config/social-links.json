@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_site_config_social_links",
+  "info": {
+    "displayName": "Social_Links",
+    "icon": "cloud",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_site_config_footer_menu_links",
+  "info": {
+    "displayName": "Footer_Menu_Links",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "Separator": {
+      "type": "string",
+      "default": " | "
+    }
+  }
+}

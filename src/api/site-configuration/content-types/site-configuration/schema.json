@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_configurations",
+  "info": {
+    "singularName": "site-configuration",
+    "pluralName": "site-configurations",
+    "displayName": "Site_Configuration",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Social_Links": {
+      "displayName": "Social_Links",
+      "type": "component",
+      "repeatable": true,
+      "component": "site-config.social-links"
+    },
+    "Footer_Menu_Links": {
+      "displayName": "Footer_Menu_Links",
+      "type": "component",
+      "repeatable": true,
+      "component": "site-config.footer-menu-links"
+    },
+    "Phone_Number": {
+      "type": "string",
+      "required": true,
+      "default": "#"
+    },
+    "Email_Id": {
+      "type": "string",
+      "required": true
+    },
+    "Address": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Copy_Write": {
+      "type": "string"
+    }
+  }
+}

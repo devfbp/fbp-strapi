@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_article_banner_images",
+  "info": {
+    "displayName": "Banner_Image",
+    "icon": "chartPie"
+  },
+  "options": {},
+  "attributes": {
+    "Images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
