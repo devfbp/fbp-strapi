@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_areas",
+  "info": {
+    "singularName": "property-area",
+    "pluralName": "property-areas",
+    "displayName": "Property_Area",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-location.property-location"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

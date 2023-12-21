@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blog_blog_tags",
+  "info": {
+    "displayName": "Blog_Tag",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog-tag.blog-tag"
+    }
+  }
+}

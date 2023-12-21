@@ -12,23 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Property_Code": {
-      "type": "string",
-      "required": true
-    },
-    "Address": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor",
-      "required": true
-    },
-    "Price": {
-      "type": "decimal",
-      "default": 0,
-      "required": true
-    },
     "Description": {
       "type": "customField",
       "options": {
@@ -48,19 +31,155 @@
       "type": "float"
     },
     "Main_Image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
-    },
-    "Images": {
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "Images": {
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Door_No": {
+      "type": "string"
+    },
+    "Street_Name": {
+      "type": "string"
+    },
+    "Builder": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::builder.builder"
+    },
+    "Area": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-area.property-area"
+    },
+    "Type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-type.property-type"
+    },
+    "Video": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-status.property-status"
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Floor_Plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.floor-plans"
+    },
+    "Features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.facts-features"
+    },
+    "Amenities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.amenities"
+    },
+    "Price": {
+      "type": "string",
+      "default": "0",
+      "required": true
+    },
+    "Price_Structure": {
+      "displayName": "Price_Structure",
+      "type": "component",
+      "repeatable": true,
+      "component": "property.price-structure",
+      "required": false
+    },
+    "Bedrooms": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "Bathrooms": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "Unit_Size": {
+      "type": "string",
+      "default": "0",
+      "required": true
+    },
+    "Posted_At": {
+      "type": "datetime",
+      "required": true,
+      "default": "2023-10-31T18:30:00.000Z"
+    },
+    "Advantages": {
+      "displayName": "Advantage",
+      "type": "component",
+      "repeatable": false,
+      "component": "property.advantage"
+    },
+    "Downloads": {
+      "displayName": "Downloads",
+      "type": "component",
+      "repeatable": true,
+      "component": "property.downloads"
+    },
+    "Project_Size": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "Price_Per_Sq_Feet": {
+      "type": "string",
+      "required": true,
+      "default": "0"
+    },
+    "Total_Floors": {
+      "type": "string",
+      "default": "0",
+      "required": true
+    },
+    "Unit_Types": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.unit-details"
+    },
+    "Property_Id": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "Plot_Size": {
+      "type": "string"
+    },
+    "Facing": {
+      "type": "string"
+    },
+    "Distance": {
+      "displayName": "Distances",
+      "type": "component",
+      "repeatable": false,
+      "component": "property.distances"
+    },
+    "Other_Features": {
+      "displayName": "Other Features",
+      "type": "component",
+      "repeatable": true,
+      "component": "property.other-features"
     }
   }
 }

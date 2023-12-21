@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_property_distances",
+  "info": {
+    "displayName": "Distances",
+    "icon": "walk"
+  },
+  "options": {},
+  "attributes": {
+    "Bus_Stand": {
+      "type": "string"
+    },
+    "Railway_Station": {
+      "type": "string"
+    },
+    "School": {
+      "type": "string"
+    },
+    "Hosptial": {
+      "type": "string"
+    }
+  }
+}

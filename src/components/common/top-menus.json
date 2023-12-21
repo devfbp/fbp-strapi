@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_common_top_menus",
+  "info": {
+    "displayName": "Top_Menus",
+    "icon": "server",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}

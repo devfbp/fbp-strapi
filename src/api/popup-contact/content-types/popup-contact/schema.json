@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "popup_contacts",
+  "info": {
+    "singularName": "popup-contact",
+    "pluralName": "popup-contacts",
+    "displayName": "Popup_Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

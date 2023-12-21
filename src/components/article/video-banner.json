@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_article_video_banners",
+  "info": {
+    "displayName": "Video_Banner"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

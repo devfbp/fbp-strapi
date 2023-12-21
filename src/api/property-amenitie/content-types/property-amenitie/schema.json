@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_amenities",
+  "info": {
+    "singularName": "property-amenitie",
+    "pluralName": "property-amenities",
+    "displayName": "Property_Amenitie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Icon": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

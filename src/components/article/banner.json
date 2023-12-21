@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_article_banners",
+  "info": {
+    "displayName": "Banner",
+    "icon": "chartPie",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Line_1": {
+      "type": "text"
+    },
+    "Line_2": {
+      "type": "text"
+    },
+    "Line_3": {
+      "type": "text"
+    },
+    "Line_4": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

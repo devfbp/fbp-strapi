@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_contact_module_contact_modules",
+  "info": {
+    "displayName": "Contact_Module",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Discription": {
+      "type": "text"
+    },
+    "Position": {
+      "type": "enumeration",
+      "enum": [
+        "Left",
+        "Right"
+      ]
+    },
+    "Add_Button": {
+      "displayName": "Module_Button",
+      "type": "component",
+      "repeatable": true,
+      "component": "module-button.module-button"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

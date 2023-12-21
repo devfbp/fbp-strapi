@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_contact_links_contact_links",
+  "info": {
+    "displayName": "Contact_Links",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "string"
+    },
+    "Value": {
+      "type": "string"
+    }
+  }
+}

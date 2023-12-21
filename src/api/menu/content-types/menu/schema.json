@@ -17,12 +17,12 @@
       "enum": [
         "Main",
         "Hidden",
-        "Top"
+        "Submenu"
       ],
       "default": "Main",
       "required": true
     },
-    "Menu_Name": {
+    "Name": {
       "type": "string"
     },
     "Menu_Link_Type": {
@@ -43,6 +43,11 @@
     "Sort": {
       "type": "integer",
       "required": true
+    },
+    "Parent_Menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
     }
   }
 }

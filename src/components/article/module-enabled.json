@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_article_module_enableds",
+  "info": {
+    "displayName": "Component_Enabled",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Collection_Name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_property_price_structures",
+  "info": {
+    "displayName": "Price_Structure",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "required": false,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Value": {
+      "type": "string"
+    }
+  }
+}

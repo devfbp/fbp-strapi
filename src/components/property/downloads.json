@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_property_downloads",
+  "info": {
+    "displayName": "Downloads"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

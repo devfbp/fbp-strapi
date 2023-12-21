@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_popular_searches",
+  "info": {
+    "displayName": "Popular_Search",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "Search_List": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

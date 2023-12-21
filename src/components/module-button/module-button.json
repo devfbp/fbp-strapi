@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_module_button_module_buttons",
+  "info": {
+    "displayName": "Module_Button",
+    "icon": "seed"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

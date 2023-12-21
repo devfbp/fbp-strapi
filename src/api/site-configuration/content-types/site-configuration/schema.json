@@ -20,7 +20,7 @@
     },
     "Logo": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"
@@ -56,6 +56,56 @@
     },
     "Copy_Write": {
       "type": "string"
+    },
+    "Contacts": {
+      "displayName": "Contact_Links",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.contact-links"
+    },
+    "Top_Menu": {
+      "displayName": "Top_Menus",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.top-menus"
+    },
+    "Popular_Search": {
+      "displayName": "Popular_Search",
+      "type": "component",
+      "repeatable": false,
+      "component": "common.popular-search"
+    },
+    "Privacy_Policy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "Terms_Conditions": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "Logo2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Logo3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Mail_Template_Header": {
+      "type": "text"
+    },
+    "Mail_Template_Footer": {
+      "type": "text"
     }
   }
 }

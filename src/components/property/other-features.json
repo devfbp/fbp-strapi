@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_property_other_features",
+  "info": {
+    "displayName": "Other Features",
+    "icon": "wheelchair"
+  },
+  "options": {},
+  "attributes": {
+    "Spot_Name": {
+      "type": "string"
+    },
+    "Timing": {
+      "type": "string"
+    }
+  }
+}

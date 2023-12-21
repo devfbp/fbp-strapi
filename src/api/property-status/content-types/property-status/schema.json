@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_statuses",
+  "info": {
+    "singularName": "property-status",
+    "pluralName": "property-statuses",
+    "displayName": "Property_Status"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

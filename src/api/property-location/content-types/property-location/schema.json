@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_locations",
+  "info": {
+    "singularName": "property-location",
+    "pluralName": "property-locations",
+    "displayName": "Property_Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Sort": {
+      "type": "integer",
+      "required": true
+    },
+    "State": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name"
+    }
+  }
+}

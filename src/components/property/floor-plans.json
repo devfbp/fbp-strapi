@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_property_floor_plans",
+  "info": {
+    "displayName": "Floor_Plans"
+  },
+  "options": {},
+  "attributes": {
+    "Floor": {
+      "type": "enumeration",
+      "enum": [
+        "Ground Floor",
+        "First Floor",
+        "Second Floor",
+        "Third Floor",
+        "Top Garden"
+      ],
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

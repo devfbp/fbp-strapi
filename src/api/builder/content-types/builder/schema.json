@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "builders",
+  "info": {
+    "singularName": "builder",
+    "pluralName": "builders",
+    "displayName": "Builder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

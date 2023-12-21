@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_property_amenities",
+  "info": {
+    "displayName": "Amenities",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Amenitie": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-amenitie.property-amenitie"
+    }
+  }
+}

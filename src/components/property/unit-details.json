@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_property_unit_details",
+  "info": {
+    "displayName": "Unit_Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Unit_Type": {
+      "type": "string",
+      "required": true
+    },
+    "Saleable_Area": {
+      "type": "string",
+      "required": true
+    },
+    "RERA_Carpet_Area": {
+      "type": "string",
+      "required": true
+    },
+    "Document": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

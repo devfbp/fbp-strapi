@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_templates",
+  "info": {
+    "singularName": "email-template",
+    "pluralName": "email-templates",
+    "displayName": "Email_Template",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Subject": {
+      "type": "string"
+    },
+    "To": {
+      "type": "string"
+    },
+    "From": {
+      "type": "string"
+    },
+    "Template_Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Message": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}
