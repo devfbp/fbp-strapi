@@ -4,7 +4,8 @@
   "info": {
     "singularName": "builder",
     "pluralName": "builders",
-    "displayName": "Builder"
+    "displayName": "Builder",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,18 @@
       "customField": "plugin::ckeditor5.CKEditor"
     },
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Alias": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "Detailed_Image": {
       "allowedTypes": [
         "images"
       ],

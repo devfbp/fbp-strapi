@@ -42,7 +42,7 @@
       "repeatable": true,
       "component": "blog.blog-tag"
     },
-    "Slug": {
+    "Alias": {
       "type": "uid",
       "targetField": "Title"
     }

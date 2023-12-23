@@ -4,7 +4,8 @@
   "info": {
     "singularName": "property-status",
     "pluralName": "property-statuses",
-    "displayName": "Property_Status"
+    "displayName": "Property_Status",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,6 +15,10 @@
     "Name": {
       "type": "string",
       "required": true
+    },
+    "Alias": {
+      "type": "uid",
+      "targetField": "Name"
     }
   }
 }

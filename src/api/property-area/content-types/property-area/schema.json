@@ -31,6 +31,10 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "Alias": {
+      "type": "uid",
+      "targetField": "Name"
     }
   }
 }

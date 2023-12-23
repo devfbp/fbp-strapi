@@ -15,9 +15,6 @@
     "Name": {
       "type": "string"
     },
-    "Alias": {
-      "type": "string"
-    },
     "Menu_Link": {
       "type": "relation",
       "relation": "oneToOne",
@@ -40,7 +37,7 @@
       "repeatable": true,
       "component": "article.video-banner"
     },
-    "Slug": {
+    "Alias": {
       "type": "uid",
       "targetField": "Name"
     }

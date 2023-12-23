@@ -36,6 +36,10 @@
     },
     "Icon": {
       "type": "string"
+    },
+    "Alias": {
+      "type": "uid",
+      "targetField": "Name"
     }
   }
 }

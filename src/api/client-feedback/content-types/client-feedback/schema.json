@@ -4,7 +4,8 @@
   "info": {
     "singularName": "client-feedback",
     "pluralName": "client-feedbacks",
-    "displayName": "Client_Feedback"
+    "displayName": "Client_Feedback",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,11 +29,16 @@
       "required": true
     },
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Alias": {
+      "type": "uid",
+      "targetField": "Name"
     }
   }
 }
