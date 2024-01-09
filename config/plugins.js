@@ -6,13 +6,19 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  'sendemail': {
+  /*'sendemail': {
     enabled: true,
     resolve: './src/plugins/sendemail'
-  },
+  },*/
   'fbp': {
     enabled: true,
     resolve: './src/plugins/fbp'
+  },
+ 'import-export-entries': {
+    enabled: true,
+    config: {
+      // See `Config` section.
+    },
   },
   /*upload: {
     config: {

@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
-  url: 'https://devadmin.fullbasketproperty.com',
+  url: 'https://fbpdevadmin.fullbasketproperty.com',
   cron: {
     enabled: env.bool('CRON_ENABLED', false),
   },
