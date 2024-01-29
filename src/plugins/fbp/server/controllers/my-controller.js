@@ -8,6 +8,16 @@ module.exports = ({ strapi }) => ({
       .getWelcomeMessage();
   },
   async Propery_Enquiry(ctx) {
+'use strict';
+
+module.exports = ({ strapi }) => ({
+  index(ctx) {
+    ctx.body = strapi
+      .plugin('fbp')
+      .service('myService')
+      .getWelcomeMessage();
+  },
+  async Propery_Enquiry(ctx) {
     var postdata = ctx.request.body;
     var results = [];
     let fields = ['subject', 'message', 'to'];
@@ -33,6 +43,7 @@ module.exports = ({ strapi }) => ({
               mixmessage = mixmessage.replace("$EMAIL$", postdata.email);
               mixmessage = mixmessage.replace("$PHONE$", postdata.phonenumber);
               mixmessage = mixmessage.replace("$PROPERTYLINK$", postdata.propert_link);
+             // mixmessage = mixmessage.replace("$MESSAGE$", postdata.message);
             }
             message = mixmessage;
             if (subject && to && message) {
@@ -64,7 +75,7 @@ module.exports = ({ strapi }) => ({
       if (property_types) {
         property_types.map(async (ptype, idx) => (
           count = await strapi.db.query("api::property.property").count({
-            filters: { Type: { Name: ptype?.Name } }
+            filters: { Type: { Name: ptype?.Name }, Publish: true }
           }),
           results["type_" + ptype?.Name] = count
         ));
@@ -76,7 +87,7 @@ module.exports = ({ strapi }) => ({
       if (property_builder) {
         property_builder.map(async (builder, idx) => (
           count = await strapi.db.query("api::property.property").count({
-            filters: { Builder: { Name: builder?.Name } }
+            filters: { Builder: { Name: builder?.Name }, Publish: true }
           }),
           results["builder_" + builder?.Name] = count
         ));
@@ -89,7 +100,7 @@ module.exports = ({ strapi }) => ({
       if (property_location) {
         property_location.map(async (location, idx) => (
           count = await strapi.db.query("api::property.property").count({
-            filters: { Area: { Location: { Name: location?.Name } } }
+            filters: { Area: { Location: { Name: location?.Name } }, Publish: true }
           }),
           results["location_" + location?.Name] = count
         ));
