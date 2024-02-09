@@ -8,16 +8,6 @@ module.exports = ({ strapi }) => ({
       .getWelcomeMessage();
   },
   async Propery_Enquiry(ctx) {
-'use strict';
-
-module.exports = ({ strapi }) => ({
-  index(ctx) {
-    ctx.body = strapi
-      .plugin('fbp')
-      .service('myService')
-      .getWelcomeMessage();
-  },
-  async Propery_Enquiry(ctx) {
     var postdata = ctx.request.body;
     var results = [];
     let fields = ['subject', 'message', 'to'];
@@ -42,16 +32,23 @@ module.exports = ({ strapi }) => ({
               mixmessage = mixmessage.replace("$NAME$", postdata.name);
               mixmessage = mixmessage.replace("$EMAIL$", postdata.email);
               mixmessage = mixmessage.replace("$PHONE$", postdata.phonenumber);
-              mixmessage = mixmessage.replace("$PROPERTYLINK$", postdata.propert_link);
-             // mixmessage = mixmessage.replace("$MESSAGE$", postdata.message);
+		if(postdata.message) {
+			mixmessage = mixmessage.replace("$MESSAGE$", postdata.message);
+		}
+		if(postdata.propert_link) {
+			mixmessage = mixmessage.replace("$PROPERTYLINK$", postdata.propert_link);
+		}
             }
             message = mixmessage;
+	    //console.log("check:"+postdata+"subject:"+subject+"message:"+message)
             if (subject && to && message) {
               if (subject.length > 0 && postdata?.subject_suffix && postdata?.subject_suffix != "") {
                 subject = subject.replace("$PROPERTYNAME$", postdata?.subject_suffix)
               }
               ctx.body = await strapi.plugin('fbp').service('myService').sendEmail(subject, to, message);
-            }
+            } else {
+		console.log("Error: Check email template");
+	    }
           }
         }));
         return await new Promise(resolve => {

@@ -31,7 +31,8 @@ module.exports = ({ strapi }) => ({
     };
     transporter.sendMail(mailOptions, function (error, info) {
       if (error) {
-        console.log(error);
+	console.log("to:"+to+" message:"+message+ " sbuject"+subject)
+        console.log("Email sent failed" + error);
         result = "failed";
       } else {
         console.log('Email sent: ' + info.response);
