@@ -45,6 +45,26 @@
     "Alias": {
       "type": "uid",
       "targetField": "Title"
+    },
+    "blog_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog-category.blog-category"
+    },
+    "ImageAltText": {
+      "type": "string"
+    },
+    "ImageDescription": {
+      "type": "text"
+    },
+    "MetaTitle": {
+      "type": "string"
+    },
+    "MetaKeywords": {
+      "type": "string"
+    },
+    "MetaDescription": {
+      "type": "text"
     }
   }
 }
