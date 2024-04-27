@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  graphql: {
+ /* graphql: {
     config: {
       apolloServer: {
         introspection: true,
@@ -10,6 +10,20 @@ module.exports = ({ env }) => ({
     enabled: true,
     resolve: './src/plugins/sendemail'
   },*/
+  graphql: {
+    enabled: true,
+    config: {
+      endpoint: "/graphql",
+      shadowCRUD: true,
+      playgroundAlways: true,
+      defaultLimit: 1000,
+      maxLimit: 1000,
+      apolloServer: {
+        tracing: true,
+	introspection: true
+      },
+    },
+  },
   'fbp': {
     enabled: true,
     resolve: './src/plugins/fbp'
