@@ -4,7 +4,8 @@
   "info": {
     "singularName": "form",
     "pluralName": "forms",
-    "displayName": "Form"
+    "displayName": "Form",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,12 @@
     },
     "Extra": {
       "type": "json"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Message": {
+      "type": "text"
     }
   }
 }

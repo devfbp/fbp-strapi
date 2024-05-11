@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "image_sizes",
+  "info": {
+    "singularName": "image-size",
+    "pluralName": "image-sizes",
+    "displayName": "Image_Size"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Sizes": {
+      "type": "json"
+    }
+  }
+}
