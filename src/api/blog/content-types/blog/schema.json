@@ -49,13 +49,13 @@
     "ImageDescription": {
       "type": "text"
     },
-    "MetaTitle": {
+    "Meta_Title": {
       "type": "string"
     },
-    "MetaKeywords": {
+    "Meta_Keyword": {
       "type": "string"
     },
-    "MetaDescription": {
+    "Meta_Description": {
       "type": "text"
     },
     "Image": {

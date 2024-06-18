@@ -99,13 +99,6 @@
       "default": "0",
       "required": true
     },
-    "Price_Structure": {
-      "displayName": "Price_Structure",
-      "type": "component",
-      "repeatable": true,
-      "component": "property.price-structure",
-      "required": false
-    },
     "Bedrooms": {
       "type": "string",
       "required": true,
@@ -125,18 +118,6 @@
       "type": "datetime",
       "required": true,
       "default": "2023-10-31T18:30:00.000Z"
-    },
-    "Advantages": {
-      "displayName": "Advantage",
-      "type": "component",
-      "repeatable": false,
-      "component": "property.advantage"
-    },
-    "Downloads": {
-      "displayName": "Downloads",
-      "type": "component",
-      "repeatable": true,
-      "component": "property.downloads"
     },
     "Project_Size": {
       "type": "string",
@@ -169,23 +150,23 @@
     "Facing": {
       "type": "string"
     },
-    "Distance": {
-      "displayName": "Distances",
-      "type": "component",
-      "repeatable": false,
-      "component": "property.distances"
-    },
-    "Other_Features": {
-      "displayName": "Other Features",
-      "type": "component",
-      "repeatable": true,
-      "component": "property.other-features"
-    },
     "Min_Price": {
       "type": "biginteger"
     },
     "Max_Price": {
       "type": "biginteger"
+    },
+    "Meta_Title": {
+      "type": "string"
+    },
+    "Meta_Description": {
+      "type": "text"
+    },
+    "Meta_Keyword": {
+      "type": "text"
+    },
+    "Location_Url": {
+      "type": "text"
     }
   }
 }
