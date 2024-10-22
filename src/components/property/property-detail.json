@@ -6,24 +6,21 @@
   },
   "options": {},
   "attributes": {
-    "Name": {
-      "type": "string",
-      "required": true
+    "Value": {
+      "type": "text"
     },
-    "Description": {
-      "type": "customField",
-      "required": true,
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
-    },
-    "Image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+    "Title": {
+      "type": "enumeration",
+      "enum": [
+        "Project Location",
+        "Total Land Area",
+        "No. Of Units",
+        "No. Of Blocks",
+        "No. Of Floors",
+        "Unit Variants",
+        "Possession Time",
+        "RERA Registration Number"
+      ]
     }
   }
 }

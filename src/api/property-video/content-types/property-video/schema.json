@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_videos",
+  "info": {
+    "singularName": "property-video",
+    "pluralName": "property-videos",
+    "displayName": "Property_Video",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Video_Url": {
+      "type": "string",
+      "required": true
+    },
+    "Alias": {
+      "type": "uid",
+      "targetField": "Name"
+    }
+  }
+}

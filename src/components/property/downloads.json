@@ -1,7 +1,8 @@
 {
   "collectionName": "components_property_downloads",
   "info": {
-    "displayName": "Downloads"
+    "displayName": "Downloads",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,8 +11,14 @@
       "required": true
     },
     "Link": {
-      "type": "string",
-      "required": true
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

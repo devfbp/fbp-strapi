@@ -16,6 +16,9 @@
     "Link": {
       "type": "string",
       "required": false
+    },
+    "sort": {
+      "type": "integer"
     }
   }
 }

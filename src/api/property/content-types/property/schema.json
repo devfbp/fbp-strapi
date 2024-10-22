@@ -167,6 +167,16 @@
     },
     "Location_Url": {
       "type": "text"
+    },
+    "Details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.property-detail"
+    },
+    "Downloads": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.downloads"
     }
   }
 }
