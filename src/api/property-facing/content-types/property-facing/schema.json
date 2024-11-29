@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_facings",
+  "info": {
+    "singularName": "property-facing",
+    "pluralName": "property-facings",
+    "displayName": "Property_Facing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

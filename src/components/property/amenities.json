@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "Amenitie": {
+    "User_Prop_Amenities": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::property-amenitie.property-amenitie"

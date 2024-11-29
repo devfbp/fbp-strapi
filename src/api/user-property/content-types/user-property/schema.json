@@ -1,0 +1,123 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_properties",
+  "info": {
+    "singularName": "user-property",
+    "pluralName": "user-properties",
+    "displayName": "User_Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-type.property-type"
+    },
+    "Price": {
+      "type": "string"
+    },
+    "Bedroom": {
+      "type": "string"
+    },
+    "Bathroom": {
+      "type": "string"
+    },
+    "Parking": {
+      "type": "string"
+    },
+    "Area_Sqft": {
+      "type": "string"
+    },
+    "City": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-location.property-location"
+    },
+    "Latitude": {
+      "type": "string"
+    },
+    "Longitude": {
+      "type": "string"
+    },
+    "Commercial": {
+      "type": "enumeration",
+      "enum": [
+        "Shops",
+        "Showroom",
+        "Plug and Play",
+        "Office Space"
+      ]
+    },
+    "Floor": {
+      "type": "string"
+    },
+    "Age_of_Property": {
+      "type": "string"
+    },
+    "Maintenance_Expected": {
+      "type": "enumeration",
+      "enum": [
+        "No",
+        "Yes"
+      ]
+    },
+    "Amenities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.amenities"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Open",
+        "Review",
+        "Publish"
+      ]
+    },
+    "Main_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Phone_Number": {
+      "type": "string"
+    },
+    "User": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "Prop_Description": {
+      "type": "richtext"
+    },
+    "User_Property_Facing": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-facing.property-facing"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Place_Name": {
+      "type": "string"
+    }
+  }
+}

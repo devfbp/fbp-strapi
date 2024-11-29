@@ -26,6 +26,11 @@
     "Alias": {
       "type": "uid",
       "targetField": "Name"
+    },
+    "City": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-location.property-location"
     }
   }
 }

@@ -14,6 +14,9 @@
     },
     "Name": {
       "type": "string"
+    },
+    "Sort": {
+      "type": "integer"
     }
   }
 }
