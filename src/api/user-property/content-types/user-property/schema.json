@@ -78,7 +78,9 @@
       "enum": [
         "Open",
         "Review",
-        "Publish"
+        "Publish",
+        "Removed from User",
+        "Rejected from Admin"
       ]
     },
     "Main_Image": {
@@ -100,10 +102,10 @@
     "Phone_Number": {
       "type": "string"
     },
-    "User": {
+    "user_website": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "target": "api::user-website.user-website"
     },
     "Prop_Description": {
       "type": "richtext"

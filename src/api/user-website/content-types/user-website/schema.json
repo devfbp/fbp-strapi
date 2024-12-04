@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_websites",
+  "info": {
+    "singularName": "user-website",
+    "pluralName": "user-websites",
+    "displayName": "User_Website",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Phone_Number": {
+      "type": "string",
+      "required": true
+    },
+    "OTP": {
+      "type": "biginteger"
+    },
+    "OTP_Updated_AT": {
+      "type": "datetime"
+    },
+    "Active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
