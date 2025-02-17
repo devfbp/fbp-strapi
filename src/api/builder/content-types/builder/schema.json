@@ -35,11 +35,18 @@
       "targetField": "Name"
     },
     "Detailed_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Locations": {
+      "displayName": "Builder_Locations",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.builder-locations"
     }
   }
 }

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_builder_locations",
+  "info": {
+    "displayName": "Builder_Locations"
+  },
+  "options": {},
+  "attributes": {
+    "Location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-location.property-location"
+    }
+  }
+}

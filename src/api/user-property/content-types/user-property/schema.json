@@ -120,6 +120,43 @@
     },
     "Place_Name": {
       "type": "string"
+    },
+    "Balcony": {
+      "type": "string"
+    },
+    "Possession": {
+      "type": "string"
+    },
+    "Power_Backup": {
+      "type": "string"
+    },
+    "Maintenance_Charges": {
+      "type": "string"
+    },
+    "Furnishing_Status": {
+      "type": "string"
+    },
+    "Gated_Security": {
+      "type": "string"
+    },
+    "Ownership_Type": {
+      "type": "string"
+    },
+    "Flooring": {
+      "type": "string"
+    },
+    "Carpet_Area": {
+      "type": "string"
+    },
+    "Video_URL": {
+      "type": "string"
+    },
+    "Brochure": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
