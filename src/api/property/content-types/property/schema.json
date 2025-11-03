@@ -177,6 +177,16 @@
       "type": "component",
       "repeatable": true,
       "component": "property.downloads"
+    },
+    "FAQ": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Keywords_Search": {
+      "type": "text"
     }
   }
 }

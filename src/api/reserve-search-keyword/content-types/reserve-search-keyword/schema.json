@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "reserve_search_keywords",
+  "info": {
+    "singularName": "reserve-search-keyword",
+    "pluralName": "reserve-search-keywords",
+    "displayName": "Reserve_Search_Keyword"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Keyword": {
+      "type": "json"
+    }
+  }
+}

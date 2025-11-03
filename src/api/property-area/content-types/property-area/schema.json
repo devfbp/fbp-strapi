@@ -35,6 +35,12 @@
     "Alias": {
       "type": "uid",
       "targetField": "Name"
+    },
+    "Latitude": {
+      "type": "string"
+    },
+    "Longitude": {
+      "type": "string"
     }
   }
 }
